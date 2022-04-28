@@ -1,3 +1,18 @@
+# What is LZW?
+Lempel–Ziv–Welch (LZW) is a universal lossless data compression algorithm created by Abraham Lempel, Jacob Ziv, and Terry Welch. It was published by Welch in 1984 as an improved implementation of the LZ78 algorithm published by Lempel and Ziv in 1978. The algorithm is simple to implement and has the potential for very high throughput in hardware implementations.[1] It is the algorithm of the widely used Unix file compression utility compress and is used in the GIF image format.
+
+# What is DCT/IDCT?
+As the key to the JPEG baseline compression process, the Discrete Cosine Transform (DCT)
+is a mathematical transformation that transforms a signal from spatial representation into
+frequency representation. In an image, most of the energy will be concentrated in the lower
+frequencies. Therefore, once an image is transformed into its frequency components, we can
+treat them selectively, e.g., retaining lower frequency coefficients with high accuracy while
+squeezing the size of high frequency coefficients, so as to reduce data amount needed to
+describe the image without sacrificing too much image quality. In practice, a specially
+configured quantization table will be used to realize such selective operation. And then we can
+use the Inverse Discrete Cosine Transform (IDCT) to reconstruct the image when we want to
+see the image.
+
 # LZW compression
 
 ```
